@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Uma calculadora feita com javascript para completar o ultimo desafio do curso fundamentals do Odin Project">
+	<script src="calculator.js" defer></script>
+    </head>
+
+    <body>
+	<header>
+	    <h1>Calculator</h1>
+	</header>
+
+	<main>
+	    <div class="display">
+		<p class="display-last-result"></p>
+		<h2 class="display-result"></h2>
+	    </div>
+
+	    <div class="buttons">
+		<div class="numbers">
+		    <button>9</button>
+		    <button>8</button>
+		    <button>7</button>
+		    <button>6</button>
+		    <button>5</button>
+		    <button>4</button>
+		    <button>3</button>
+		    <button>2</button>
+		    <button>1</button>
+		    <button class="last-number">0</button>
+		</div>
+
+		<div class="options">
+		    <div class="wipe">
+			<button class="delete">X</button>
+			<button class="clear">AC</button>
+		    </div>
+
+		    <div class="operators">
+			<button>+</button>
+			<button>-</button>
+		    </div>
+
+		    <div class="operators">
+			<button>*</button>
+			<button>/</button>
+		    </div>
+
+		    <div class="result">
+			<button class="result-button">=</button>
+		    </div>
+		</div>
+	    </div>
+	</main>
+
+        <footer>
+            <p>Feito por <a href="https://github.com/MathevsBatista">Mathevs Batista</a></p>
+        </footer>
+    </body>
+</html>
