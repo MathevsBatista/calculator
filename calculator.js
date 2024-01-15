@@ -11,8 +11,8 @@ function multiply(number1, number2) {
 }
 
 function divide(number1, number2) {
-    if(number2 == 0){
-	return "Não é possível dividir por zero!";
+    if(number2 == "0"){
+	return "🚫/0";
     }
     return number1 / number2;
 }
@@ -28,7 +28,7 @@ function operate(number1, operator, number2) {
 	case "/":
 	    return divide(number1, number2);
 	default:
-	    return "Invalid operator!"
+	    return "Invalid!"
     }
 }
 
@@ -41,7 +41,11 @@ function calculator(numberOperatorNumberArray) {
 
 	if(numberOperatorNumber.length == 3) {
 	    i = 0;
-	    result = parseFloat(operate(...numberOperatorNumber).toFixed(2));
+	    result = operate(...numberOperatorNumber);
+
+	    if (typeof result == "number") {
+		result = parseFloat(result.toFixed(2));
+	    }
 
 	    numberOperatorNumber.length = 0;
 	    numberOperatorNumber.push(result);
